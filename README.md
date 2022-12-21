@@ -16,11 +16,9 @@ For part A:
 The optimal control sequences that were obtained for some of the given environments of part A, were used to plot the gif showing movement of the robot based on the given environment.
 <p align="left">
   <img src = "https://user-images.githubusercontent.com/89351094/208841886-9837271e-000d-435a-bf4c-c2c71c50ab60.gif"/>
- </p>
- 
- <p align="right">
+<p align="right">
   <img src = "https://user-images.githubusercontent.com/89351094/208841986-7135d067-0b4a-40cc-8b8c-950c5020ee36.gif"/>
- </p>!
+ </p>
 
 
 
