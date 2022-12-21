@@ -14,11 +14,11 @@ Designing and implementing a Dynamic Programming algorithm that minimizes the co
 
 For part A:
 The optimal control sequences that were obtained for some of the given environments of part A, were used to plot the gif showing movement of the robot based on the given environment.
-<p align="center">
+<p align="left">
   <img src = "https://user-images.githubusercontent.com/89351094/208841886-9837271e-000d-435a-bf4c-c2c71c50ab60.gif"/>
  </p>
  
- <p align="center">
+ <p align="right">
   <img src = "https://user-images.githubusercontent.com/89351094/208841986-7135d067-0b4a-40cc-8b8c-950c5020ee36.gif"/>
  </p>!
 
@@ -27,50 +27,27 @@ The optimal control sequences that were obtained for some of the given environme
 For part B:
 Some examples of random environments for important cases (both door closed, both open, one open one closed) are shown below.
  
-<p align="center">
+<p align="left">
   <img src = "https://user-images.githubusercontent.com/89351094/208842088-de9b4798-49c1-4076-9ed6-dc5e6391feb9.gif"/>
 </p>
 
-<p align="center">
+<p align="right">
   <img src = "https://user-images.githubusercontent.com/89351094/208842152-6b3e55f0-d59d-4613-b5d5-834a5cd6bad5.gif"/>
 </p>
 
 
-## Details of code files (This is a class homework: ECE276B SP22 PR2)
+## Details of code files (This is a class homework: ECE276B SP22 PR1)
 
-Run the main.py
-Current setting: it will plot the final position as well as path for the map 3.
-To run other maps, change map name in two places: 
+There are two '.py' files:
 
-1) test_map
-2) argument of 'plotting(path)'. (give path location of the map that you want to run)
+1) utils.py -- This needs to be run first as its functions are utilized in the main file
+		This file includes the Label Correcting Algorithm for both parts (named: dp)
+		along with some helper functions.
 
-#### Folder attached: Results
-Contains the results
+2) doorkey.py -- This is the main file and is executing part A and B
+		The Label Correcting Algorithm of utils.py is used in
+			this file's function "doorkey_problem"
 
-Other files attached:
-#### 1. robotplanner.py
-
-This file contains the algorythm RTAAstar which is used accordingly in the function robotplanner.
-Also contains other small helper functions needed for the algorith.
-
-#### 2. targetplanner.py
-This file is not modified in any way (as instructed).
-
-#### 3. main.py
-
-This file contains test functions.
-
-This file is almost same as given.
-Changes:
-
-1) from robotplanner import *
-2) from path import * 
-3) Arrays to store the states at each timestamp in order to use the data for plotting the path later
-4) tqdm to track the time and number of iterations in real time
-5) calling the 'plotting(path)' function at the end that plots the complete path (need to feed the map location)
-
-#### 4. path.py
-
-This contains 'plotting(path)' function that plots the stored path
+		Just uncomment the part which need to be run (A or B)
+			and comment the other after "if __name__ == '__main__':"
 
